@@ -1,0 +1,42 @@
+---
+title: "Califiaciones"
+author: "Mónica Gaona"
+date: "29 de agosto de 2016"
+output: html_document
+---
+
+
+
+### Otoño 2014
+
+* Programación Actuarial I: cal.8
+* Introducción a la Profesión Actuarial: cal.8
+* Conceptos de Cálculo: cal.5
+* Matemáticas Básicas: cal. 5
+* Probelemas de Matemáticas Básicas: cal.5
+* DHPC: cal.9
+
+### Primavera 2015
+
+* Teoría del Interés 1: cal.8
+* Microeconomía: cal. 9
+* Conceptos de Cálculo: cal.9
+* Matemáticas Básicas: cal. 7
+* Probrelemas de Matemáticas Básicas: cal.7
+* Geometría Análitica: cal. 9
+
+### Otoño 2015
+
+* Teoría del Interés II: cal.8
+* Macroeconomía: cal.8
+* Formación Humana y Social: cal.10
+* Cálculo Diferencial: cal.5
+* Teoría de Ecuaciones: cal.5
+
+### Primavera 2016
+
+* Programación Actuarial II: cal.7
+* Sistema Financiero Mexicano: cal.8
+* Cálculo Diferencial: cal.8
+* Teoría de Ecuaciones: cal.6
+
