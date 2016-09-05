@@ -83,10 +83,39 @@ data
 
 #76 es la forma general de 78
 
+#clase 01/09/16
 
+#clase 05/09/16
 
+#para leer no toda la tabla
+args(read.table)
+data <- read.table("datos_S&P.csv",T,",",nrows=100, skip=2)
+data
+#lappy filas o columnas aplicada en una lista
+#s forma simple 
+#m matriz
+#t vector
 
+clases <- sapply(data,class)
+data <- read.table("datos_S&P.csv",T,",",colClasses = clases)
+#más fácil de leer, tipo de clase por columna
 
+#guarfar objetos en el disco duro pero recuperables en RAM
 
+#USO DE dput y dget
+y <- data.frame(a=1,b="a") #dos culmnas, un dato
+dput(y) #describe el objeto
+dput(y, file= "y.r") #guarda el objeto en un archivo en particular en el disco duro
+nueva.y <- dget("y.R") #trae el archivo de vuelta 
+y
+nueva.y
 
+x <- "Programación Actuarial III"
+y <- data.frame(a=1,b="a")
+dump(c("x","y"), file="data.R") #tomas x y y y lo guardas en el archivo data, usamos el nombre de la variable
+#comillas para que no pegue programacipón sino el objeto
 
+rm(x,y)
+source("data.R")
+Mónica.quality <- head(airquality)
+dput(z, file("Mónica.quality.R"))
