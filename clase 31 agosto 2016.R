@@ -119,3 +119,47 @@ rm(x,y)
 source("data.R")
 Mónica.quality <- head(airquality)
 dput(z, file("Mónica.quality.R"))
+
+con <- url("http://www.fcfm.buap.mx/","r")
+x <- readLines(con,7)
+x
+
+
+#SUBCONJUNTOS
+#lo maneja con la misma clase del objeto
+#creamos un vector
+x <- c("a","b","c","d","e")
+x
+#extraemos con  []
+x[1]
+x[2]
+#también podemos extraer una secuencia de elementos
+x[1:4]
+# es ppsible extraer los elementos que cumplen una restricci´pn
+x[x>"b"]
+#de manera equivalente se puede obtener un vector lógico
+u <- x=="c"
+u
+x[u] #x evaluada en u
+
+#SUBCONJUNTOS DE LISTAS
+#creamos una lista
+x <- list(foo = 1:4, bar = 0.6)
+#extraemos el primer elemento de la lista,
+#este elemento es una lista que contiene una secuencia
+x[1] #conserva la clase (una lista)
+#extramoes nuevamente el primer elemento de la lista
+#ahora el elemento es la secuencia en sí 
+x[[1]] #saca el objeto como tal (una secuencia)
+#extraemos un elemento por nombre 
+x$bar #por nombre, como el doble corchete, objeto como tal
+x[["bar"]]
+x["bar"]
+#$ no resuelve operaciones
+
+#para sacar un elemento en específico de una lista
+x$foo[2] #saca el segundo termino
+
+
+
+
