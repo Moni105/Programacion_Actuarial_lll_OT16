@@ -1,5 +1,5 @@
 
-setwd("~/GitHub/Programacion_Actuarial_lll_OT16/")
+n
 
 mediacontaminante <- function(directorio, contaminante, id = 1:332) {
   #setwd("~/GitHub/Programacion_Actuarial_lll_OT16/")
@@ -15,4 +15,6 @@ mediacontaminante <- function(directorio, contaminante, id = 1:332) {
 mediacontaminante("specdata", "nitrate", 4:7)
 
 
+getwd()
 
+setwd("~/Documentos/")
