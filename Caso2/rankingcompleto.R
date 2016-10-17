@@ -10,7 +10,7 @@ rankingcompleto <- function(resultado, num = "mejor") {
         stop("invalid outcome :(")
     }
     
-    # Para cada estado, encuentra el hospital con la posición dada.
+    
     col <- if (resultado == "ataque") {
         11 #columna de Heart Attack
     } else if (resultado == "falla") {
