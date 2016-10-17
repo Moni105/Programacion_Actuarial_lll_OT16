@@ -22,7 +22,7 @@ rankingcompleto <- function(resultado, num = "mejor") {
     data[, col] <- suppressWarnings(as.numeric(levels(data[, col])[data[, col]]))
     data[, 2] <- as.character(data[, 2])
     
-    resultadoFin <- vector() #Vector vacío para llenar luego 
+    resultadoFin <- vector()  
     estados <- levels(data[, 7])
     
     for(i in 1:length(estados)) {
@@ -38,11 +38,10 @@ rankingcompleto <- function(resultado, num = "mejor") {
         } 
         
         resultadoFin <- append(resultadoFin, c(hospital, estados[i])) 
-        #append agrega elementos al vector que teniamos vacio al inincio
+        #nota: append agrega elementos al vector que teniamos vacio al inincio
     }
     
-    # Regresa un data frame con el nombre del hospital y la abreviatura
-    # del nombre del estado al que pertenece.
+   
     resultadoFin <- as.data.frame(matrix(resultadoFin, length(estados), 2, byrow = TRUE))
     colnames(resultadoFin) <- c("hospital", "estado")
     rownames(resultadoFin) <- estados
